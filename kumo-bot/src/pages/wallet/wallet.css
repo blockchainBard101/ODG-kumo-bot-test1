@@ -1,0 +1,257 @@
+/* wallet.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wallet-container {
+  max-width: 350px; /* Reduce the container width */
+  margin: 10px auto; /* Reduce margin */
+  padding: 15px; /* Reduce padding */
+  background-color: #fff;
+  border-radius: 8px; /* Slightly smaller border-radius */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px; /* Reduce heading font size */
+  color: #4b9cef;
+  margin-bottom: 15px; /* Reduce margin */
+}
+
+h3 {
+  text-align: center;
+  font-size: 20px; /* Reduce heading font size */
+  color: #4b92ef;
+  margin-bottom: 15px; /* Reduce margin */
+}
+
+.wallet-info {
+  text-align: center;
+}
+
+.wallet-address {
+  font-size: 12px; /* Reduce font size */
+  color: #555;
+  background-color: #f4f4f4;
+  padding: 6px; /* Reduce padding */
+  border-radius: 5px;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.wallet-address:hover {
+  background-color: #e0e0e0;
+}
+
+.balance-info {
+  margin: 15px 0; /* Reduce margin */
+  text-align: left;
+  font-size: 14px; /* Reduce font size */
+}
+
+.conversion-form {
+  text-align: left;
+}
+
+.conversion-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px; /* Reduce margin */
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 4px; /* Reduce margin */
+}
+
+select,
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px; /* Reduce padding */
+  font-size: 12px; /* Reduce font size */
+  border: 2px solid #ddd;
+  border-radius: 6px; /* Slightly smaller border-radius */
+  margin-bottom: 8px; /* Reduce margin */
+  background-color: #f8f8f8;
+  color: #000;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+select:hover,
+input:hover {
+  background-color: #eef3f9;
+}
+
+select:focus,
+input:focus {
+  border-color: #4b9cef;
+  outline: none;
+}
+
+/* Enhanced dropdown */
+select {
+  appearance: none;
+  background-color: #f8f8f8;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%234b9cef' d='M2 0L0 2h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center; /* Adjust position */
+  background-size: 10px; /* Smaller size */
+  padding-right: 24px; /* Reduce padding */
+  color: #000;
+}
+
+.convert-button {
+  background-color: #4b9cef;
+  color: white;
+  border: none;
+  border-radius: 6px; /* Smaller border-radius */
+  padding: 12px; /* Reduce padding */
+  font-size: 14px; /* Reduce font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.convert-button:hover {
+  background-color: #3a7cb5;
+}
+
+.slippage-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px; /* Reduce margin */
+}
+
+.gas-fee-info {
+  margin-top: 12px; /* Reduce margin */
+  text-align: left;
+  font-size: 12px; /* Reduce font size */
+  color: #777;
+}
+
+.submit-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px; /* Smaller border-radius */
+  padding: 12px; /* Reduce padding */
+  font-size: 14px; /* Reduce font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 15px; /* Reduce margin */
+}
+
+.submit-button:hover {
+  background-color: #219653;
+}
+
+@media (max-width: 480px) {
+  .wallet-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  h2, h3 {
+    font-size: 18px; /* Reduce font size on smaller screens */
+  }
+
+  .convert-button,
+  .submit-button {
+    font-size: 13px; /* Reduce button font size */
+    padding: 10px; /* Reduce button padding */
+  }
+}
+
+/* Custom styling for dropdown options */
+option {
+  font-size: 12px; /* Reduce option font size */
+  padding: 8px; /* Reduce padding */
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+option:hover {
+  background-color: #4b9cef;
+  color: white;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Slightly lighter backdrop */
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px; /* Match the border-radius of the container */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Same shadow as wallet container */
+  text-align: center;
+  width: 90%; /* Responsive width */
+  max-width: 300px; /* Match max-width of wallet container */
+}
+
+.modal-content h4 {
+  font-size: 18px; /* Keep font size consistent */
+  color: #333; /* Same text color */
+  margin-bottom: 15px; /* Consistent spacing */
+}
+
+.modal-content p {
+  font-size: 14px; /* Consistent paragraph font size */
+  color: #777; /* Use the same gray color for secondary text */
+  margin-bottom: 20px; /* Slight margin for spacing */
+}
+
+.modal-content button {
+  background-color: #27ae60; /* Same color as submit button */
+  color: white;
+  border: none;
+  border-radius: 6px; /* Match button radius */
+  padding: 10px 20px; /* Match the button padding */
+  font-size: 14px; /* Consistent font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #219653; /* Consistent hover effect */
+}
+
+/* For small screens */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    max-width: 280px; /* Reduce modal max-width */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .modal-content h4 {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .modal-content p {
+    font-size: 13px; /* Smaller font size */
+  }
+
+  .modal-content button {
+    font-size: 13px; /* Smaller button font */
+    padding: 8px 16px; /* Reduce button padding */
+  }
+}

@@ -1,0 +1,90 @@
+/* General layout styling */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f4f7fb; /* Light background for a clean look */
+  font-family: Arial, sans-serif;
+}
+
+/* Headings styling */
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Button styling */
+.google-login-button {
+  background-color: #4285f4; /* Google Blue */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.google-login-button:hover {
+  background-color: #357ae8;
+}
+
+.google-login-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Text styling */
+p {
+  color: #555;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 15px;
+  max-width: 300px;
+  line-height: 1.4;
+}
+
+p:last-of-type {
+  color: #999;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .google-login-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+}

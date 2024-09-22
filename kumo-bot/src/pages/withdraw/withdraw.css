@@ -1,0 +1,130 @@
+/* withdraw.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .withdraw-container {
+    max-width: 350px; 
+    margin: 20px auto; 
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #4b9cef;
+    margin-bottom: 20px;
+  }
+  
+  .withdraw-form {
+    text-align: left;
+  }
+  
+  .coin-selector,
+  .withdraw-address,
+  .withdraw-amount {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  select,
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background-color: #f8f8f8;
+    color: #000;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  select:hover,
+  input:hover {
+    background-color: #eef3f9;
+  }
+  
+  select:focus,
+  input:focus {
+    border-color: #4b9cef;
+    outline: none;
+  }
+  
+  /* Enhanced dropdown */
+  select {
+    appearance: none;
+    background-color: #f8f8f8;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%234b9cef' d='M2 0L0 2h4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 10px;
+    padding-right: 24px;
+    color: #000;
+  }
+  
+  .send-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .send-button:hover {
+    background-color: #219653;
+  }
+  
+  .balance-info {
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 480px) {
+    .withdraw-container {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    .send-button {
+      font-size: 13px;
+      padding: 10px;
+    }
+  }
+  
+  /* Custom styling for dropdown options */
+  option {
+    font-size: 12px;
+    padding: 8px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  option:hover {
+    background-color: #4b9cef;
+    color: white;
+  }
+  
